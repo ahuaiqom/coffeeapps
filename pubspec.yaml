@@ -1,0 +1,36 @@
+name: coffee_app
+description: A simple coffee app UI with list and detail page.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/AddIcon.png
+    - assets/icon/All Coffee.png
+    - assets/icon/Back.png
+    - assets/icon/Heart.png
+    - assets/icon/StarRating.png
+
+    # Image files
+    - assets/image/blackcoffee.jpg
+    - assets/image/caramelmachiato.jpg
+    - assets/image/coffee.jpg
+    - assets/image/Flat_white.jpg
+
