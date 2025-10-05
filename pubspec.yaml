@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^6.1.2
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
@@ -27,10 +28,22 @@ flutter:
     - assets/icon/Back.png
     - assets/icon/Heart.png
     - assets/icon/StarRating.png
+    - assets/icon/FilterListScreen.png
+    - assets/icon/Banner 1.png
+    - assets/icon/Search (2).png
+    - assets/icon/Banner 1.png
+    - assets/icon/HomeIcon.png
+    - assets/icon/NotifIcon.png
+    - assets/icon/ShopIcon.png
+    - assets/icon/FavoriteIcon.png
+    
 
     # Image files
     - assets/image/blackcoffee.jpg
     - assets/image/caramelmachiato.jpg
     - assets/image/coffee.jpg
     - assets/image/Flat_white.jpg
+    - assets/image/coldbrew.jpg
+    - assets/image/affogato.jpg
+    - assets/image/Banner2.jpg
 

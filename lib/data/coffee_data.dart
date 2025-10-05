@@ -1,9 +1,25 @@
 import '../models/coffee.dart';
+import '../models/category.dart';
+import '../models/promo.dart';
+
+const Promo samplePromo = Promo(
+  title: "Buy one get\none FREE",
+  subtitle: "Promo",
+  imageAsset: "assets/images/promo_banner.png",
+);
+
+final List<Category> categories = [
+  Category(id: 'all', label: 'All Coffee'),
+  Category(id: 'deep', label: 'Deep Foam'),
+  Category(id: 'latte', label: 'Latte'),
+  Category(id: 'sweet', label: 'Sweet'),
+  Category(id: 'classic', label: 'Classic'),
+];
 
 final List<Coffee> coffees = [
   Coffee(
     name: "Caffe Mocha",
-    type: "Deep Foam",
+    category: "deep",
     image: "assets/image/coffee.jpg",
     price: 4.53,
     rating: 4.8,
@@ -13,7 +29,7 @@ final List<Coffee> coffees = [
   ),
   Coffee(
     name: "Flat White",
-    type: "Espresso",
+    category: "latte",
     image: "assets/image/Flat_white.jpg",
     price: 3.53,
     rating: 4.8,
@@ -23,7 +39,7 @@ final List<Coffee> coffees = [
   ),
   Coffee(
     name: "Black Coffee",
-    type: "Classic",
+    category: "classic",
     image: "assets/image/blackcoffee.jpg",
     price: 2.99,
     rating: 4.6,
@@ -32,8 +48,28 @@ final List<Coffee> coffees = [
   ),
   Coffee(
     name: "Caramel Macchiato",
-    type: "Sweet",
-    image: "assets/image/caramelmachiato.jpg", // pastikan namanya sesuai file
+    category: "sweet",
+    image: "assets/image/caramelmachiato.jpg",
+    price: 5.10,
+    rating: 4.7,
+    reviews: 200,
+    description:
+        "A caramel macchiato is made with vanilla syrup, steamed milk, espresso and caramel sauce.",
+  ),
+  Coffee(
+    name: "Cold Brew Ice",
+    category: "sweet",
+    image: "assets/image/coldbrew.jpg",
+    price: 5.10,
+    rating: 4.7,
+    reviews: 200,
+    description:
+        "A caramel macchiato is made with vanilla syrup, steamed milk, espresso and caramel sauce.",
+  ),
+  Coffee(
+    name: "Creamy Affogato",
+    category: "sweet",
+    image: "assets/image/affogato.jpg",
     price: 5.10,
     rating: 4.7,
     reviews: 200,

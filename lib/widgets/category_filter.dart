@@ -1,45 +1,42 @@
 import 'package:flutter/material.dart';
+import '../data/coffee_data.dart';
+import '../controllers/home_controller.dart';
+import 'package:provider/provider.dart';
 
-class CategoryFilter extends StatelessWidget {
-  final List<String> categories;
-  final String selectedCategory;
-  final Function(String) onSelected;
-
-  const CategoryFilter({
-    super.key,
-    required this.categories,
-    required this.selectedCategory,
-    required this.onSelected,
-  });
+class CategoryFilterWidget extends StatelessWidget {
+  const CategoryFilterWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Provider.of<HomeController>(context);
     return SizedBox(
       height: 40,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: categories.length,
-        separatorBuilder: (context, index) => const SizedBox(width: 8),
+        separatorBuilder: (_, __) => const SizedBox(width: 8),
         itemBuilder: (context, index) {
-          final category = categories[index];
-          final isSelected = category == selectedCategory;
-
+          final cat = categories[index];
+          final isSelected = controller.selectedCategory == cat.id;
           return GestureDetector(
-            onTap: () => onSelected(category),
+            onTap: () => controller.selectCategory(cat.id),
             child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
               decoration: BoxDecoration(
-                color: isSelected ? Colors.brown : Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: Colors.grey.shade300),
+                color: isSelected ? const Color(0xFFB86E49) : Colors.white,
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(
+                  color: isSelected
+                      ? Colors.transparent
+                      : Colors.grey.shade300,
+                ),
               ),
-              child: Center(
-                child: Text(
-                  category,
-                  style: TextStyle(
-                    color: isSelected ? Colors.white : Colors.black,
-                    fontWeight: FontWeight.w500,
-                  ),
+              alignment: Alignment.center,
+              child: Text(
+                cat.label,
+                style: TextStyle(
+                  color: isSelected ? Colors.white : Colors.black87,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
