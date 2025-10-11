@@ -3,7 +3,7 @@ import '../models/promo.dart';
 
 class PromoBannerWidget extends StatelessWidget {
   final Promo promo;
-  const PromoBannerWidget({required this.promo, super.key,});
+  const PromoBannerWidget({required this.promo, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +11,13 @@ class PromoBannerWidget extends StatelessWidget {
       height: 110,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 16,
+            offset: const Offset(0, 8),
+            color: Colors.black.withOpacity(0.15),
+          ),
+        ],
         image: DecorationImage(
           image: AssetImage(promo.imageAsset),
           fit: BoxFit.cover,
@@ -18,6 +25,7 @@ class PromoBannerWidget extends StatelessWidget {
       ),
       child: Stack(
         children: [
+          // overlay gradasi supaya teks tetap kebaca
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
@@ -39,7 +47,10 @@ class PromoBannerWidget extends StatelessWidget {
               ),
               child: Text(
                 promo.subtitle,
-                style: TextStyle(color: Colors.white.withOpacity(0.95), fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.95),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
@@ -54,7 +65,7 @@ class PromoBannerWidget extends StatelessWidget {
                 fontWeight: FontWeight.w800,
               ),
             ),
-          )
+          ),
         ],
       ),
     );

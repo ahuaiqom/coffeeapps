@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
+import 'controllers/home_controller.dart';
 
 void main() {
-  runApp(const CoffeeApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => HomeController()..init(), // siapkan state awal kalau perlu
+      child: const CoffeeApp(),
+    ),
+  );
 }
 
 class CoffeeApp extends StatelessWidget {
@@ -14,7 +21,7 @@ class CoffeeApp extends StatelessWidget {
       title: 'Coffee',
       theme: ThemeData(
         fontFamily: 'Inter',
-        scaffoldBackgroundColor:Colors.white,
+        scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const HomeScreen(),

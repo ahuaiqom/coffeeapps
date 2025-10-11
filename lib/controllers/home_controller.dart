@@ -1,17 +1,38 @@
 import 'package:flutter/material.dart';
-import '../data/coffee_data.dart';
+import '../models/promo.dart';
+import '../models/coffee.dart';
+import '../models/category.dart';
+import '../data/coffee_data.dart' as data; // pakai data dummy yang sudah ada
 
 class HomeController extends ChangeNotifier {
-  String selectedCategory = 'all';
-  String location = 'Bilzen, Tanjungbalai';
+  // === State untuk header & promo (dari langkah sebelumnya) ===
+  String location = 'East Java, Malang';
+  Promo promo = const Promo(
+    title: "Buy one get one FREE",
+    subtitle: "Promo",
+    imageAsset: "assets/image/Banner2.jpg",
+  );
 
+  // === State untuk filter kategori & daftar kopi ===
+  String selectedCategory = 'all';
+
+  // Sumber data (sementara dari dummy). Nanti gampang diganti ke Repository/API.
+  List<Category> get categories => data.categories;
+  List<Coffee> get _allCoffees => data.coffees;
+
+  // List yang sudah difilter oleh kategori (dan nanti bisa ditambah query)
+  List<Coffee> get coffeesFiltered {
+    if (selectedCategory == 'all') return _allCoffees;
+    return _allCoffees.where((c) => c.category == selectedCategory).toList();
+  }
+
+  // Actions
   void selectCategory(String categoryId) {
     selectedCategory = categoryId;
     notifyListeners();
   }
 
-  List get coffeesFiltered {
-    if (selectedCategory == 'all') return coffees;
-    return coffees.where((c) => c.category == selectedCategory).toList();
+  void init() {
+    // jika suatu saat perlu fetch async, taruh di sini lalu notifyListeners()
   }
 }
