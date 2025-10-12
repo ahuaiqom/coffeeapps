@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'screens/home_screen.dart';
+
 import 'controllers/home_controller.dart';
+import 'screens/home_screen.dart';
+import 'theme/app_theme.dart';
 
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (_) => HomeController()..init(), // siapkan state awal kalau perlu
+      create: (_) => HomeController()..init(),
       child: const CoffeeApp(),
     ),
   );
@@ -19,11 +21,9 @@ class CoffeeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Coffee',
-      theme: ThemeData(
-        fontFamily: 'Inter',
-        scaffoldBackgroundColor: Colors.white,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      theme: AppTheme.light,        
+      darkTheme: AppTheme.dark,     
+      themeMode: ThemeMode.light,   
       home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );

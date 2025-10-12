@@ -57,7 +57,6 @@ class _NavItem extends StatelessWidget {
   const _NavItem({
     required this.iconPath,
     this.active = false,
-    super.key,
   });
 
   @override

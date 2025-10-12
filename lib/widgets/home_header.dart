@@ -10,12 +10,12 @@ class HomeHeader extends StatelessWidget {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-      Color(0xFF111111), // 0%
-      Color(0xFF1B1B1B), // 55%
-      Color(0xFF212121), // 80%
-      Color(0xFF1A1A1A), // 100%
+      Color(0xFF0F0F0F), // 0% - sedikit lebih lembut dari #111111
+      Color(0xFF181818), // 40% - transisi lembut
+      Color(0xFF1E1C1A), // 75% - warm brownish tone
+      Color(0xFF1A1716), // 100% - lembut di bawah
     ],
-    stops: [0.0, 0.55, 0.80, 1.0],
+    stops: [0.0, 0.4, 0.75, 1.0],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
         ),
