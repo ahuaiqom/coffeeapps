@@ -1,7 +1,7 @@
 # ☕ CoffeeApps  
 [![Flutter CI](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml/badge.svg?branch=main)](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml)
-![Flutter](https://img.shields.io/badge/Framework-Flutter-blue?logo=flutter)
-![Dart](https://img.shields.io/badge/Language-Dart-blue?logo=dart)
+[![Flutter](https://img.shields.io/badge/Framework-Flutter-blue?logo=flutter)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Language-Dart-blue?logo=dart)](https://dart.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ahuaiqom/coffeeapps)
 
