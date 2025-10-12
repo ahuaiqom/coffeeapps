@@ -1,6 +1,10 @@
 # ☕ CoffeeApps  
 [![Flutter CI](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml/badge.svg?branch=main)](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml)
-
+[![GitHub release](https://img.shields.io/github/v/release/ahuaiqom/coffeeapps?color=blue)](https://github.com/ahuaiqom/coffeeapps/releases)
+![Flutter](https://img.shields.io/badge/Framework-Flutter-blue?logo=flutter)
+![Dart](https://img.shields.io/badge/Language-Dart-blue?logo=dart)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/ahuaiqom/coffeeapps)
 
 A beautifully crafted Flutter mobile application inspired by modern coffee shop designs.  
 Built with clean OOP architecture and modular UI components.
