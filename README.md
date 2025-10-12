@@ -5,10 +5,9 @@ Built with clean OOP architecture and modular UI components.
 ---
 
 ## 📱 Preview  
-<p align="center">
-  <img src="assets/screenshots/home_dark.png" width="300" alt="Coffee Home Screen Preview">
-  <img src="assets/screenshots/home_light.png" width="300" alt="Coffee App Light Theme">
-</p>
+<img width="499" height="811" alt="image" src="https://github.com/user-attachments/assets/f4aeb430-c6f4-467b-8a55-1b6032438c1c" />
+<img width="497" height="809" alt="image" src="https://github.com/user-attachments/assets/bc074fda-dad0-46b4-9c21-0881e4e03cbb" />
+
 
 ---
 
@@ -41,3 +40,16 @@ git clone https://github.com/ahuaiqom/coffeeapps.git
 cd coffeeapps
 flutter pub get
 flutter run
+
+🖋️ Typography
+
+This project uses Sora typeface (weights 400/500/600/700) with consistent 150% line height and 0% letter spacing,
+following Figma UI design specifications for better readability and harmony.
+
+⚖️ License
+
+This project is open for personal and educational purposes only.
+UI assets are inspired by a Figma Community design under the NAM Design license.
+
+© 2025 Ahmad Ahua Iqomaddin
+Created for learning, research, and personal development in Flutter.
