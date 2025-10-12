@@ -29,17 +29,23 @@ Built with clean OOP architecture and modular UI components.
   by *Bony Fasius Gultom* — Figma Community (used under NAM Design license).
 
 ---
-🖋️ Typography
 
-This project uses Sora typeface (weights 400/500/600/700) with consistent 150% line height and 0% letter spacing,
+## 🖋️ Typography
+This project uses **Sora** typeface (weights 400/500/600/700) with consistent 150% line height and 0% letter spacing,  
 following Figma UI design specifications for better readability and harmony.
 
-⚖️ License
+---
 
-This project is open for personal and educational purposes only.
+## ⚖️ License
+This project is open for **personal and educational purposes** only.  
+UI assets are inspired by a Figma Community design under the NAM Design license.
+
+> © 2025 Ahmad Ahua Iqomaddin  
+> Created for learning, research, and personal development in Flutter.
+
+---
 
 ## 🚀 Getting Started
-
 Clone this repository and run the app on your local machine:
 
 ```bash
@@ -47,5 +53,3 @@ git clone https://github.com/ahuaiqom/coffeeapps.git
 cd coffeeapps
 flutter pub get
 flutter run
-
-
