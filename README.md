@@ -25,8 +25,8 @@ Built with clean OOP architecture and modular UI components.
 - **State Management:** [Provider](https://pub.dev/packages/provider)  
 - **Architecture:** MVVM-style OOP pattern  
 - **Fonts:** [Sora](https://fonts.google.com/specimen/Sora)  
-- **UI Design:** [Coffee Shop Mobile App Design](https://www.figma.com/community/file/1116708627748807811)  
-  by *Bony Fasius Gultom* — Figma Community (used under NAM Design license).
+- **UI Design:** Inspired by a Figma Community design (NAM Design license).
+
 
 ---
 
