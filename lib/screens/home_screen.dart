@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../controllers/home_controller.dart';
 import '../controllers/nav_visibility_controller.dart';
 import '../widgets/bottom_navbar.dart';
 import '../widgets/home_appbar_sliver.dart';
