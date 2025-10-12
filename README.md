@@ -1,4 +1,5 @@
 # ☕ CoffeeApps  
+[![Flutter CI](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml/badge.svg?branch=main)](https://github.com/ahuaiqom/coffeeapps/actions/workflows/flutter_ci.yml)
 
 
 A beautifully crafted Flutter mobile application inspired by modern coffee shop designs.  
