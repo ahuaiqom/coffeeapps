@@ -5,7 +5,7 @@ Built with clean OOP architecture and modular UI components.
 ---
 
 ## 📱 Preview  
-<img width="499" height="811" alt="image" src="https://github.com/user-attachments/assets/f4aeb430-c6f4-467b-8a55-1b6032438c1c" /> <img width="497" height="809" alt="image" src="https://github.com/user-attachments/assets/bc074fda-dad0-46b4-9c21-0881e4e03cbb" />
+<img width="499" height="811" alt="image" src="https://github.com/user-attachments/assets/f4aeb430-c6f4-467b-8a55-1b6032438c1c" /><img width="497" height="809" alt="image" src="https://github.com/user-attachments/assets/bc074fda-dad0-46b4-9c21-0881e4e03cbb" />
 
 
 ---
